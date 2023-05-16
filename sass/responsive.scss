@@ -1,0 +1,29 @@
+@import "variables";
+
+/* MOBILE PORTRAIT to LANDSCAPE */
+@media only screen and (min-width: 250px) and (max-width: 767px) {
+
+}
+
+/* MOBILE LANDSCAPE */
+@media screen and (min-width: 250px) and (max-width: 767px) and (orientation: landscape) {
+	
+}
+
+/* TABLETS PORTRAIT to LANDSCAPE */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	
+}
+
+/* TABLET LANDSCAPE SMALLER DESKTOP */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media only screen and (min-width: 1199px) and (max-width: 1399px) {
+	
+}
+
+/* TABLETS to MOBILE */
+@media only screen and (max-width: 991px) {
+}
