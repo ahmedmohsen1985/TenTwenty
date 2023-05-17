@@ -1,4 +1,149 @@
 @import "../variables";
 
+main {
+  .hero_slider {
+    position: relative;
 
+    .slick-next {
+      position: absolute;
+      bottom: 67px;
+      left: 135px;
+      background: transparent;
+      border: 1px solid rgba(238, 244, 249, 0.3);
+      padding: 20px;
+      width: 138px;
+      height: 138px;
+      span {
+        position: absolute;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+        right: 0;
+        font-weight: 400;
+        font-size: $h5 + 1;
+        line-height: 110%;
+        color: $baseColor;
+      }
+      .thumb {
+        height: 100%;
+        object-fit: cover;
+      }
+      .slick-thumb-nav {
+        width: 95px;
+        height: 95px;
+      }
+    }
+    .progressBar {
+      height: 148px;
+      width: 148px;
+      position: absolute;
+      z-index: 0;
+      bottom: -6px;
+      left: -6px;
+      background: linear-gradient(to right, $baseColor 99.99%, transparent),
+        linear-gradient(to bottom, $baseColor 99.99%, transparent),
+        linear-gradient(to right, $baseColor 99.99%, transparent),
+        linear-gradient(to bottom, $baseColor 99.99%, transparent);
+      background-size: 100% 8px, 8px 100%, 100% 8px, 8px 100%;
+      background-repeat: no-repeat;
+      animation: progress 4s linear forwards;
+      background-position: -148px 0px, 143px -148px, 148px 143px, 0px 148px;
+    }
+    .hero-image {
+      width: 100%;
+      transition: all 500ms ease-in-out;
+      transform: scale(1.25, 1.25);
+    }
+    .slick-active {
+        img{
+            transform: scale(1, 1);
+        }
+        .slider-content{
+            animation-name: fadeInUpSD;
+            animation-duration: 1s;
+            opacity: 1;
+        }
+    }
+    .slider-content {
+      position: absolute;
+      top: 50%;
+      margin-left: 135px;
+      overflow: hidden;
+      h3 {
+        font-size: $h5 + 1;
+        line-height: 150%;
+        color: $baseColor;
+        font-weight: 400;
+        margin: 0;
+      }
+      h2 {
+        font-weight: 400;
+        font-size: $p_9;
+        line-height: 100%;
+        text-transform: capitalize;
+        color: $baseColor;
+        margin: 24px 0 0 0;
+      }
+    }
+  }
+
+  /** Text Animation **/
+
+  @-webkit-keyframes fadeInUpSD {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      transform: translateY(50%);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  @keyframes fadeInUpSD {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+      transform: translateY(50%);
+    }
+
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  .fadeInUpSD {
+    -webkit-animation-name: fadeInUpSD;
+    animation-name: fadeInUpSD;
+  }
+
+  /* Text Animation End **/
   
+
+  @keyframes progress {
+    0% {
+      background-position: -145px 0px, 140px -145px, 145px 140px, 0px 145px;
+    }
+    25% {
+      background-position: 0px 0px, 140px -145px, 145px 140px, 0px 145px;
+    }
+    50% {
+      background-position: 0px 0px, 140px 0px, 145px 140px, 0px 145px;
+    }
+    75% {
+      background-position: 0px 0px, 140px 0px, 0px 140px, 0px 145px;
+    }
+    100% {
+      background-position: 0px 0px, 140px 0px, 0px 140px, 0px 0px;
+    }
+  }
+}

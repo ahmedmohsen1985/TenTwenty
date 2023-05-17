@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "responsive.css",
+	"sources": [
+		"../sass/responsive.scss",
+		"../sass/_variables.scss"
+	],
+	"sourcesContent": [
+		"\r\n@import \"variables\";\r\n\r\n/* MOBILE PORTRAIT to LANDSCAPE */\r\n@media only screen and (min-width: 250px) and (max-width: 767px) {\r\n\r\n}\r\n\r\n/* MOBILE LANDSCAPE */\r\n@media screen and (min-width: 250px) and (max-width: 767px) and (orientation: landscape) {\r\n\t\r\n}\r\n\r\n/* TABLETS PORTRAIT to LANDSCAPE */\r\n@media only screen and (min-width: 768px) and (max-width: 991px) {\r\n\t\r\n\t\r\n}\r\n\r\n/* TABLET LANDSCAPE SMALLER DESKTOP */\r\n@media only screen and (min-width: 992px) and (max-width: 1199px) {\r\n\r\n}\r\n@media only screen and (min-width: 1199px) and (max-width: 1399px) {\r\n\t\r\n}\r\n\r\n/* TABLETS to MOBILE */\r\n@media only screen and (max-width: 991px) {\r\n}\r\n",
+		"/*Colors*/\r\n$baseColor  : #EEF4F9;\r\n$theme-color: #FFFCFA;\r\n$black      : #000000;\r\n$white:       #ffffff;\r\n\r\n\r\n/* Typography */\r\n$h1 : 24px;\r\n$h2 : 22px;\r\n$h3 : 20px;\r\n$h4 : 18px;\r\n$h5 : 15px;\r\n$h6 : 14px;\r\n\r\n$blockquote : 25px;\r\n$p : 16px;\r\n$p-small : 12px;\r\n\r\n$p_1 : 4px;\r\n$p_2 : 8px;\r\n$p_3 : 16px;\r\n$p_4 : 24px;\r\n$p_5 : 32px;\r\n$p_6 : 40px;\r\n$p_7 : 48px;\r\n$p_8 : 56px;\r\n$p_9 : 64px;\r\n$p_10 : 72px;\r\n$p_11 : 84px;\r\n$p_12 : 100px;"
+	],
+	"names": [],
+	"mappings": "ACAA,UAAU;AAOV,gBAAgB;ADJhB,kCAAkC;AAKlC,sBAAsB;AAKtB,mCAAmC;AAMnC,sCAAsC;AAQtC,uBAAuB"
+}

@@ -1,0 +1,166 @@
+/*Colors*/
+/* Typography */
+/* line 3, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main {
+  /** Text Animation **/
+  /* Text Animation End **/
+}
+
+/* line 4, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .hero_slider {
+  position: relative;
+}
+
+/* line 7, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .hero_slider .slick-next {
+  position: absolute;
+  bottom: 67px;
+  left: 135px;
+  background: transparent;
+  border: 1px solid rgba(238, 244, 249, 0.3);
+  padding: 20px;
+  width: 138px;
+  height: 138px;
+}
+
+/* line 16, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .hero_slider .slick-next span {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: #EEF4F9;
+}
+
+/* line 31, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .hero_slider .slick-next .thumb {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* line 35, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .hero_slider .slick-next .slick-thumb-nav {
+  width: 95px;
+  height: 95px;
+}
+
+/* line 40, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .hero_slider .progressBar {
+  height: 148px;
+  width: 148px;
+  position: absolute;
+  z-index: 0;
+  bottom: -6px;
+  left: -6px;
+  background: linear-gradient(to right, #EEF4F9 99.99%, transparent), linear-gradient(to bottom, #EEF4F9 99.99%, transparent), linear-gradient(to right, #EEF4F9 99.99%, transparent), linear-gradient(to bottom, #EEF4F9 99.99%, transparent);
+  background-size: 100% 8px, 8px 100%, 100% 8px, 8px 100%;
+  background-repeat: no-repeat;
+  animation: progress 4s linear forwards;
+  background-position: -148px 0px, 143px -148px, 148px 143px, 0px 148px;
+}
+
+/* line 56, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .hero_slider .hero-image {
+  width: 100%;
+  transition: all 500ms ease-in-out;
+  transform: scale(1.25, 1.25);
+}
+
+/* line 62, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .hero_slider .slick-active img {
+  transform: scale(1, 1);
+}
+
+/* line 65, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .hero_slider .slick-active .slider-content {
+  animation-name: fadeInUpSD;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+/* line 71, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .hero_slider .slider-content {
+  position: absolute;
+  top: 50%;
+  margin-left: 135px;
+  overflow: hidden;
+}
+
+/* line 76, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .hero_slider .slider-content h3 {
+  font-size: 16px;
+  line-height: 150%;
+  color: #EEF4F9;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* line 83, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .hero_slider .slider-content h2 {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 100%;
+  text-transform: capitalize;
+  color: #EEF4F9;
+  margin: 24px 0 0 0;
+}
+
+@-webkit-keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUpSD {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* line 124, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+main .fadeInUpSD {
+  -webkit-animation-name: fadeInUpSD;
+  animation-name: fadeInUpSD;
+}
+
+@keyframes progress {
+  0% {
+    background-position: -145px 0px, 140px -145px, 145px 140px, 0px 145px;
+  }
+  25% {
+    background-position: 0px 0px, 140px -145px, 145px 140px, 0px 145px;
+  }
+  50% {
+    background-position: 0px 0px, 140px 0px, 145px 140px, 0px 145px;
+  }
+  75% {
+    background-position: 0px 0px, 140px 0px, 0px 140px, 0px 145px;
+  }
+  100% {
+    background-position: 0px 0px, 140px 0px, 0px 140px, 0px 0px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
