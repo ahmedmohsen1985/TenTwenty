@@ -1,17 +1,116 @@
 /*Colors*/
 /* Typography */
-/* line 3, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
-main {
-  /** Text Animation **/
-  /* Text Animation End **/
+/* line 3, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+header {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  background: #ffffff;
+  z-index: 2;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px;
 }
 
-/* line 4, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 16, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+header .menuBtn {
+  display: none;
+}
+
+/* line 20, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+header ul {
+  margin: 0;
+}
+
+/* line 23, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+header ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* line 27, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+header ul li a:hover:after,
+header ul li a:focus:after {
+  width: 100%;
+  left: 0;
+}
+
+/* line 33, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+header ul li a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #000000;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+/* line 43, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+header ul li a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background: #000000;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/* line 57, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+header ul li:last-child {
+  margin-right: 0;
+}
+
+/* line 62, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+header .btn {
+  background: #FFFCFA;
+  border: 1px solid #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: #221F20;
+  padding-left: 16px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 74, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+header .btn:hover .btn-arrow {
+  margin-right: 15px;
+  margin-left: 18px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/* line 83, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+header .btn .btn-arrow {
+  background: url("/images/arrow.svg") no-repeat center left;
+  background-size: 100%;
+  width: 18px;
+  height: 14px;
+  margin-right: 10px;
+  margin-left: 16px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/* line 98, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_section {
   position: relative;
 }
 
-/* line 6, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 101, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_section .pagingInfo {
   position: absolute;
   bottom: 127px;
@@ -22,7 +121,7 @@ main .hero_section .pagingInfo {
   align-items: center;
 }
 
-/* line 14, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 110, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_section .pagingInfo span {
   font-weight: 400;
   font-size: 16px;
@@ -30,7 +129,7 @@ main .hero_section .pagingInfo span {
   color: #EEF4F9;
 }
 
-/* line 20, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 117, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_section .pagingInfo .line {
   height: 1px;
   background: #EEF4F9;
@@ -39,7 +138,7 @@ main .hero_section .pagingInfo .line {
   margin: 0 17px;
 }
 
-/* line 30, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 128, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slick-next {
   position: absolute;
   bottom: 67px;
@@ -52,7 +151,7 @@ main .hero_slider .slick-next {
   cursor: pointer;
 }
 
-/* line 40, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 139, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slick-next span {
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -69,19 +168,19 @@ main .hero_slider .slick-next span {
   color: #EEF4F9;
 }
 
-/* line 56, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 156, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slick-next .thumb {
   height: 100%;
   object-fit: cover;
 }
 
-/* line 60, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 161, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slick-next .slick-thumb-nav {
   width: 95px;
   height: 95px;
 }
 
-/* line 65, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 167, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_slider .progressBar {
   height: 148px;
   width: 148px;
@@ -96,28 +195,29 @@ main .hero_slider .progressBar {
   background-position: -148px 0px, 140px -148px, 148px 140px, 0px 148px;
 }
 
-/* line 81, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 184, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_slider .hero-image {
   width: 100%;
   transition: all 500ms ease-in-out;
   transform: scale(1.25, 1.25);
   height: 900px;
   object-fit: cover;
+  cursor: pointer;
 }
 
-/* line 89, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 194, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slick-active img {
   transform: scale(1, 1);
 }
 
-/* line 92, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 198, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slick-active .slider-content {
   animation-name: fadeInUpSD;
   animation-duration: 1s;
   opacity: 1;
 }
 
-/* line 98, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 205, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slider-content {
   position: absolute;
   bottom: 42%;
@@ -125,7 +225,7 @@ main .hero_slider .slider-content {
   overflow: hidden;
 }
 
-/* line 103, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 211, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slider-content h3 {
   font-size: 16px;
   line-height: 150%;
@@ -134,7 +234,7 @@ main .hero_slider .slider-content h3 {
   margin: 0;
 }
 
-/* line 110, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 219, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slider-content h2 {
   font-weight: 400;
   font-size: 64px;
@@ -142,6 +242,35 @@ main .hero_slider .slider-content h2 {
   text-transform: capitalize;
   color: #EEF4F9;
   margin: 24px 0 0 0;
+}
+
+/* line 230, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+main .products {
+  background: url("/images/art.svg") center top no-repeat;
+}
+
+/* line 232, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+main .products h1 {
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 129%;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #000000;
+  padding: 130px 0 60px 0;
+  margin: 40px 0 0 0;
+}
+
+/* line 242, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+main .products p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #7A7777;
+  width: 748px;
+  margin: 0 auto;
+  padding-bottom: 100px;
 }
 
 @-webkit-keyframes fadeInUpSD {
@@ -170,7 +299,7 @@ main .hero_slider .slider-content h2 {
   }
 }
 
-/* line 151, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+/* line 282, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
 main .fadeInUpSD {
   -webkit-animation-name: fadeInUpSD;
   animation-name: fadeInUpSD;
@@ -193,5 +322,234 @@ main .fadeInUpSD {
     background-position: 0px 0px, 140px 0px, 0px 140px, 0px 0px;
   }
 }
+
+/* MOBILE PORTRAIT to LANDSCAPE */
+@media only screen and (min-width: 250px) and (max-width: 767px) {
+  /* line 314, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  header {
+    margin: 0 !important;
+    padding: 25px !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* line 322, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  header ul li {
+    display: block !important;
+    margin-right: 0 !important;
+  }
+  /* line 325, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  header ul li a {
+    font-size: 28px;
+  }
+  /* line 332, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .hero_slider .progressBar {
+    height: 123px !important;
+    width: 123px !important;
+    bottom: -6px !important;
+    left: -5.5px !important;
+  }
+  /* line 338, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .hero_slider .slider-content {
+    margin-left: 25px !important;
+  }
+  /* line 340, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .hero_slider .slider-content h3 {
+    font-size: 14px !important;
+    line-height: 130% !important;
+  }
+  /* line 344, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .hero_slider .slider-content h2 {
+    font-size: 46px !important;
+    line-height: 100% !important;
+  }
+  /* line 349, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .hero_slider .hero-image {
+    height: 810px !important;
+  }
+  /* line 352, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .hero_slider .slick-next {
+    left: 25px !important;
+    width: 115px !important;
+    height: 115px !important;
+    bottom: 60px !important;
+    padding: 17px !important;
+  }
+  /* line 358, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .hero_slider .slick-next span {
+    font-size: 14px !important;
+    line-height: 110% !important;
+  }
+  /* line 362, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .hero_slider .slick-next .slick-thumb-nav {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  /* line 368, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .pagingInfo {
+    left: 180px !important;
+    bottom: 115px !important;
+  }
+  /* line 371, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .pagingInfo .line {
+    width: 100px !important;
+  }
+  /* line 376, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .products {
+    background: none !important;
+  }
+  /* line 378, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .products h1 {
+    font-size: 30px !important;
+    line-height: 133% !important;
+    padding: 50px 0 24px 0 !important;
+  }
+  /* line 383, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .products p {
+    width: 312px !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 19px !important;
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+    padding-bottom: 40px !important;
+  }
+  @keyframes progress {
+    0% {
+      background-position: -123px 0px, 115px -123px, 123px 115px, 0px 123px;
+    }
+    25% {
+      background-position: 0px 0px, 115px -123px, 123px 115px, 0px 123px;
+    }
+    50% {
+      background-position: 0px 0px, 115px 0px, 123px 115px, 0px 123px;
+    }
+    75% {
+      background-position: 0px 0px, 115px 0px, 0px 115px, 0px 123px;
+    }
+    100% {
+      background-position: 0px 0px, 115px 0px, 0px 115px, 0px 0px;
+    }
+  }
+  /* line 416, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .menuBtn {
+    height: 48px;
+    width: 48px;
+    position: relative;
+    z-index: 101;
+    background: #FFFCFA;
+    display: block !important;
+  }
+  /* line 423, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .menuBtn > span {
+    background-color: #221F20;
+    border-radius: 1px;
+    height: 1px;
+    width: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0 0 0 -8px;
+    transition: height 100ms;
+  }
+  /* line 433, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .menuBtn > span:after, .menuBtn > span:before {
+    content: '';
+    background-color: #221F20;
+    border-radius: 1px;
+    height: 1px;
+    width: 22px;
+    position: absolute;
+    left: 50%;
+    margin-left: -11px;
+    transition: all 200ms;
+  }
+  /* line 444, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .menuBtn > span:after {
+    top: -7px;
+  }
+  /* line 447, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .menuBtn > span:before {
+    bottom: -7px;
+  }
+  /* line 452, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .menuBtn.act > span {
+    height: 0;
+  }
+  /* line 454, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .menuBtn.act > span:after, .menuBtn.act > span:before {
+    background-color: #221F20;
+    top: 1px;
+  }
+  /* line 458, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .menuBtn.act > span:after {
+    transform: rotate(45deg);
+  }
+  /* line 461, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .menuBtn.act > span:before {
+    transform: rotate(-45deg);
+  }
+  /* line 468, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .mainMenu {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: scale(0);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  /* line 484, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .mainMenu.act {
+    opacity: 1;
+    transform: scale(1);
+  }
+  /* line 487, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .mainMenu.act ul li {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  /* line 492, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .mainMenu ul {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  /* line 496, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .mainMenu li {
+    padding: 8px 0;
+    transition: all 400ms 510ms;
+    opacity: 0;
+  }
+  /* line 500, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .mainMenu li:nth-child(odd) {
+    transform: translateX(30%);
+  }
+  /* line 503, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .mainMenu li:nth-child(even) {
+    transform: translateX(-30%);
+  }
+  /* line 506, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .mainMenu li:last-child {
+    transform: none;
+  }
+  /* line 510, C:/Users/Mohsen/Desktop/test/TenTwenty/sass/pages/home.scss */
+  .mainMenu a {
+    display: block;
+  }
+}
+
+/* MOBILE LANDSCAPE */
+/* TABLETS PORTRAIT to LANDSCAPE */
+/* TABLET LANDSCAPE SMALLER DESKTOP */
+/* TABLETS to MOBILE */
 
 /*# sourceMappingURL=home.css.map */

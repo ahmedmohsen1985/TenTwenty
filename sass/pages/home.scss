@@ -1,23 +1,120 @@
 @import "../variables";
 
+header {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  background: $white;
+  z-index: 2;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px;
+
+  .menuBtn{
+    display: none;
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 20px;
+
+      a:hover:after,
+      a:focus:after {
+        width: 100%;
+        left: 0;
+      }
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: $black;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        position: relative;
+        
+        &::after {
+          content: "";
+          width: 0;
+          height: 1px;
+          background: $black;
+          position: absolute;
+          left: 50%;
+          bottom: -5px;
+           -webkit-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .btn{
+    background: #FFFCFA;
+    border: 1px solid #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    color: #221F20;
+    padding-left: 16px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    &:hover{
+      .btn-arrow{
+        margin-right: 15px;
+        margin-left: 18px;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+      }
+
+    }
+    .btn-arrow{
+      background: url('/images/arrow.svg') no-repeat center left;
+      background-size: 100%;
+      width: 18px;
+      height: 14px;
+      margin-right: 10px;
+      margin-left: 16px;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+    }
+  }
+}
+
 main {
-  .hero_section{
+  .hero_section {
     position: relative;
-    .pagingInfo{
+
+    .pagingInfo {
       position: absolute;
       bottom: 127px;
       color: $baseColor;
       left: 306px;
       display: flex;
-    justify-content: space-between;
-    align-items: center;
-      span{
+      justify-content: space-between;
+      align-items: center;
+
+      span {
         font-weight: 400;
         font-size: 16px;
         line-height: 110%;
         color: $baseColor;
       }
-      .line{
+
+      .line {
         height: 1px;
         background: $baseColor;
         width: 103px;
@@ -26,6 +123,7 @@ main {
       }
     }
   }
+
   .hero_slider {
     .slick-next {
       position: absolute;
@@ -37,6 +135,7 @@ main {
       width: 138px;
       height: 138px;
       cursor: pointer;
+
       span {
         position: absolute;
         -webkit-transform: translateY(-50%);
@@ -51,17 +150,20 @@ main {
         font-size: $h5 + 1;
         line-height: 110%;
         color: $baseColor;
-        
+
       }
+
       .thumb {
         height: 100%;
         object-fit: cover;
       }
+
       .slick-thumb-nav {
         width: 95px;
         height: 95px;
       }
     }
+
     .progressBar {
       height: 148px;
       width: 148px;
@@ -78,28 +180,34 @@ main {
       animation: progress 4s linear forwards;
       background-position: -148px 0px, 140px -148px, 148px 140px, 0px 148px;
     }
+
     .hero-image {
       width: 100%;
       transition: all 500ms ease-in-out;
       transform: scale(1.25, 1.25);
       height: 900px;
       object-fit: cover;
+      cursor: pointer;
     }
+
     .slick-active {
-        img{
-            transform: scale(1, 1);
-        }
-        .slider-content{
-            animation-name: fadeInUpSD;
-            animation-duration: 1s;
-            opacity: 1;
-        }
+      img {
+        transform: scale(1, 1);
+      }
+
+      .slider-content {
+        animation-name: fadeInUpSD;
+        animation-duration: 1s;
+        opacity: 1;
+      }
     }
+
     .slider-content {
       position: absolute;
       bottom: 42%;
       margin-left: 135px;
       overflow: hidden;
+
       h3 {
         font-size: $h5 + 1;
         line-height: 150%;
@@ -107,6 +215,7 @@ main {
         font-weight: 400;
         margin: 0;
       }
+
       h2 {
         font-weight: 400;
         font-size: $p_9;
@@ -118,7 +227,29 @@ main {
     }
   }
 
-  /** Text Animation **/
+  .products{
+    background: url('/images/art.svg') center top no-repeat;
+    h1{
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 129%;
+      text-align: center;
+      letter-spacing: -1px;
+      color: $black;
+      padding: 130px 0 60px 0;
+      margin: 40px 0 0 0;
+    }
+    p{
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      color: $grey;
+      width: 748px;
+      margin: 0 auto;
+      padding-bottom: 100px;
+    }
+  }
 
   @-webkit-keyframes fadeInUpSD {
     0% {
@@ -153,24 +284,256 @@ main {
     animation-name: fadeInUpSD;
   }
 
-  /* Text Animation End **/
-  
-
   @keyframes progress {
     0% {
       background-position: -148px 0px, 140px -148px, 148px 140px, 0px 148px;
     }
+
     25% {
       background-position: 0px 0px, 140px -148px, 148px 140px, 0px 148px;
     }
+
     50% {
       background-position: 0px 0px, 140px 0px, 148px 140px, 0px 148px;
     }
+
     75% {
       background-position: 0px 0px, 140px 0px, 0px 140px, 0px 148px;
     }
+
     100% {
       background-position: 0px 0px, 140px 0px, 0px 140px, 0px 0px;
     }
   }
+}
+
+
+
+/* MOBILE PORTRAIT to LANDSCAPE */
+@media only screen and (min-width: 250px) and (max-width: 767px) {
+  header{
+      margin: 0 !important;
+      padding: 25px !important;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      ul{
+        li{
+          display: block !important;
+          margin-right: 0 !important;
+          a{
+            font-size: 28px;
+          }
+        }
+      }
+  }
+  .hero_slider{
+    .progressBar {
+      height: 123px !important;
+      width: 123px !important;
+      bottom: -6px !important;
+      left: -5.5px !important;
+    }
+      .slider-content {
+          margin-left: 25px !important;
+           h3 {
+              font-size: 14px !important;
+              line-height: 130% !important;
+          }
+          h2 {
+              font-size: 46px !important;
+              line-height: 100% !important;
+          }
+      }
+     .hero-image{
+          height: 810px !important;
+     }
+     .slick-next{
+          left: 25px !important;
+          width: 115px !important;
+          height: 115px !important;
+          bottom: 60px !important; 
+          padding: 17px !important;
+          span{
+            font-size: 14px !important;
+            line-height: 110% !important;
+          }
+          .slick-thumb-nav {
+            width: 80px !important;
+            height: 80px !important;
+          }
+     }
+  } 
+  .pagingInfo{
+    left: 180px !important;
+    bottom: 115px !important;
+    .line{
+      width: 100px !important;
+    }
+  }
+
+  .products{
+    background: none !important;
+    h1{
+      font-size: 30px !important;
+      line-height: 133% !important;
+      padding: 50px 0 24px 0 !important;
+    }
+    p{
+      width: 312px !important;
+      font-weight: 400 !important;
+      font-size: 16px !important;
+      line-height: 19px !important;
+      padding-right: 25px !important;
+      padding-left: 25px !important;
+      padding-bottom: 40px !important;
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      background-position: -123px 0px, 115px -123px, 123px 115px, 0px 123px;
+    }
+
+    25% {
+      background-position: 0px 0px, 115px -123px, 123px 115px, 0px 123px;
+    }
+
+    50% {
+      background-position: 0px 0px, 115px 0px, 123px 115px, 0px 123px;
+    }
+
+    75% {
+      background-position: 0px 0px, 115px 0px, 0px 115px, 0px 123px;
+    }
+
+    100% {
+      background-position: 0px 0px, 115px 0px, 0px 115px, 0px 0px;
+    }
+  }
+
+.menuBtn {
+  height: 48px;
+  width: 48px;
+  position: relative;
+  z-index: 101;
+  background: $theme-color;
+  display: block !important;
+	> span {
+		background-color: $light-black;
+    border-radius: 1px;
+    height: 1px;
+    width: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: 0 0 0 -8px;
+    transition: height 100ms;
+		&:after, &:before {
+			content: '';
+			background-color: $light-black;
+			border-radius: 1px;
+			height: 1px;
+			width: 22px;
+			position: absolute;
+			left: 50%;
+			margin-left: -11px;
+			transition: all 200ms;
+		}
+		&:after {
+			top: -7px;
+		}
+		&:before {
+			bottom: -7px;
+		}
+	}
+	&.act {
+		> span {
+			height: 0;
+			&:after, &:before {
+				background-color: $light-black;
+				top: 1px;
+			}
+			&:after {
+				transform: rotate(45deg);
+			}
+			&:before {
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+
+.mainMenu {
+	background-color: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transform: scale(0);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+	&.act {
+		opacity: 1;
+		transform: scale(1);
+		ul li {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	}
+	ul {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	li {
+		padding: 8px 0;
+		transition: all 400ms 510ms;
+		opacity: 0;
+		&:nth-child(odd) {
+			transform: translateX(30%);
+		}
+		&:nth-child(even) {
+			transform: translateX(-30%);
+		}
+		&:last-child {
+			transform: none;
+		}
+	}
+	a {
+		display: block;
+	}
+
+}
+
+}
+
+/* MOBILE LANDSCAPE */
+@media screen and (min-width: 250px) and (max-width: 767px) and (orientation: landscape) {
+
+}
+
+/* TABLETS PORTRAIT to LANDSCAPE */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+/* TABLET LANDSCAPE SMALLER DESKTOP */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media only screen and (min-width: 1199px) and (max-width: 1399px) {
+
+}
+
+/* TABLETS to MOBILE */
+@media only screen and (max-width: 991px) {
 }
