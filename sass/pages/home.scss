@@ -1,9 +1,32 @@
 @import "../variables";
 
 main {
-  .hero_slider {
+  .hero_section{
     position: relative;
-
+    .pagingInfo{
+      position: absolute;
+      bottom: 127px;
+      color: $baseColor;
+      left: 306px;
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+      span{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 110%;
+        color: $baseColor;
+      }
+      .line{
+        height: 1px;
+        background: $baseColor;
+        width: 103px;
+        display: block;
+        margin: 0 17px;
+      }
+    }
+  }
+  .hero_slider {
     .slick-next {
       position: absolute;
       bottom: 67px;
@@ -13,6 +36,7 @@ main {
       padding: 20px;
       width: 138px;
       height: 138px;
+      cursor: pointer;
       span {
         position: absolute;
         -webkit-transform: translateY(-50%);
@@ -27,6 +51,7 @@ main {
         font-size: $h5 + 1;
         line-height: 110%;
         color: $baseColor;
+        
       }
       .thumb {
         height: 100%;
@@ -43,7 +68,7 @@ main {
       position: absolute;
       z-index: 0;
       bottom: -6px;
-      left: -6px;
+      left: -5.5px;
       background: linear-gradient(to right, $baseColor 99.99%, transparent),
         linear-gradient(to bottom, $baseColor 99.99%, transparent),
         linear-gradient(to right, $baseColor 99.99%, transparent),
@@ -51,12 +76,14 @@ main {
       background-size: 100% 8px, 8px 100%, 100% 8px, 8px 100%;
       background-repeat: no-repeat;
       animation: progress 4s linear forwards;
-      background-position: -148px 0px, 143px -148px, 148px 143px, 0px 148px;
+      background-position: -148px 0px, 140px -148px, 148px 140px, 0px 148px;
     }
     .hero-image {
       width: 100%;
       transition: all 500ms ease-in-out;
       transform: scale(1.25, 1.25);
+      height: 900px;
+      object-fit: cover;
     }
     .slick-active {
         img{
@@ -70,7 +97,7 @@ main {
     }
     .slider-content {
       position: absolute;
-      top: 50%;
+      bottom: 42%;
       margin-left: 135px;
       overflow: hidden;
       h3 {
@@ -131,16 +158,16 @@ main {
 
   @keyframes progress {
     0% {
-      background-position: -145px 0px, 140px -145px, 145px 140px, 0px 145px;
+      background-position: -148px 0px, 140px -148px, 148px 140px, 0px 148px;
     }
     25% {
-      background-position: 0px 0px, 140px -145px, 145px 140px, 0px 145px;
+      background-position: 0px 0px, 140px -148px, 148px 140px, 0px 148px;
     }
     50% {
-      background-position: 0px 0px, 140px 0px, 145px 140px, 0px 145px;
+      background-position: 0px 0px, 140px 0px, 148px 140px, 0px 148px;
     }
     75% {
-      background-position: 0px 0px, 140px 0px, 0px 140px, 0px 145px;
+      background-position: 0px 0px, 140px 0px, 0px 140px, 0px 148px;
     }
     100% {
       background-position: 0px 0px, 140px 0px, 0px 140px, 0px 0px;

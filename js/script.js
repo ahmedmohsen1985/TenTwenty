@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    var time = 2;
     var $bar,
         $slick,
         tick
@@ -11,7 +10,7 @@ $(document).ready(function () {
 
     $slick.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
     var i = (currentSlide ? currentSlide : 0) + 1;
-    $status.html('<span>' + i + '</span>' + '/' + slick.slideCount);
+    $status.html('<span>0' + i + '</span>' + '<span class="line"></span> 0' + slick.slideCount);
     });
 
     $slick.slick({
@@ -20,7 +19,7 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 4000,
         prevArrow: false,
-        nextArrow: '<button type="button" class="slick-custom-buttom slick-next"><div data-slick-index="0" class="progressBar"></div><div class="pagingInfo"></div></button>',
+        nextArrow: '<button type="button" class="slick-custom-buttom slick-next"><div data-slick-index="0" class="progressBar"></div></button>',
         useTransform: false,
         infinite: true,
         speed: 300,

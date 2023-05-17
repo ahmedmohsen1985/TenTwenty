@@ -1,17 +1,45 @@
 /*Colors*/
 /* Typography */
-/* line 3, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 3, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main {
   /** Text Animation **/
   /* Text Animation End **/
 }
 
-/* line 4, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
-main .hero_slider {
+/* line 4, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+main .hero_section {
   position: relative;
 }
 
-/* line 7, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 6, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+main .hero_section .pagingInfo {
+  position: absolute;
+  bottom: 127px;
+  color: #EEF4F9;
+  left: 306px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 14, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+main .hero_section .pagingInfo span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 110%;
+  color: #EEF4F9;
+}
+
+/* line 20, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
+main .hero_section .pagingInfo .line {
+  height: 1px;
+  background: #EEF4F9;
+  width: 103px;
+  display: block;
+  margin: 0 17px;
+}
+
+/* line 30, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slick-next {
   position: absolute;
   bottom: 67px;
@@ -21,9 +49,10 @@ main .hero_slider .slick-next {
   padding: 20px;
   width: 138px;
   height: 138px;
+  cursor: pointer;
 }
 
-/* line 16, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 40, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slick-next span {
   position: absolute;
   -webkit-transform: translateY(-50%);
@@ -40,61 +69,63 @@ main .hero_slider .slick-next span {
   color: #EEF4F9;
 }
 
-/* line 31, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 56, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slick-next .thumb {
   height: 100%;
   object-fit: cover;
 }
 
-/* line 35, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 60, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slick-next .slick-thumb-nav {
   width: 95px;
   height: 95px;
 }
 
-/* line 40, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 65, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main .hero_slider .progressBar {
   height: 148px;
   width: 148px;
   position: absolute;
   z-index: 0;
   bottom: -6px;
-  left: -6px;
+  left: -5.5px;
   background: linear-gradient(to right, #EEF4F9 99.99%, transparent), linear-gradient(to bottom, #EEF4F9 99.99%, transparent), linear-gradient(to right, #EEF4F9 99.99%, transparent), linear-gradient(to bottom, #EEF4F9 99.99%, transparent);
   background-size: 100% 8px, 8px 100%, 100% 8px, 8px 100%;
   background-repeat: no-repeat;
   animation: progress 4s linear forwards;
-  background-position: -148px 0px, 143px -148px, 148px 143px, 0px 148px;
+  background-position: -148px 0px, 140px -148px, 148px 140px, 0px 148px;
 }
 
-/* line 56, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 81, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main .hero_slider .hero-image {
   width: 100%;
   transition: all 500ms ease-in-out;
   transform: scale(1.25, 1.25);
+  height: 900px;
+  object-fit: cover;
 }
 
-/* line 62, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 89, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slick-active img {
   transform: scale(1, 1);
 }
 
-/* line 65, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 92, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slick-active .slider-content {
   animation-name: fadeInUpSD;
   animation-duration: 1s;
   opacity: 1;
 }
 
-/* line 71, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 98, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slider-content {
   position: absolute;
-  top: 50%;
+  bottom: 42%;
   margin-left: 135px;
   overflow: hidden;
 }
 
-/* line 76, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 103, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slider-content h3 {
   font-size: 16px;
   line-height: 150%;
@@ -103,7 +134,7 @@ main .hero_slider .slider-content h3 {
   margin: 0;
 }
 
-/* line 83, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 110, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main .hero_slider .slider-content h2 {
   font-weight: 400;
   font-size: 64px;
@@ -139,7 +170,7 @@ main .hero_slider .slider-content h2 {
   }
 }
 
-/* line 124, C:/Users/Mohsen/Desktop/TenTwenty/sass/pages/home.scss */
+/* line 151, C:/Users/AHMED.MOHSEN/Desktop/New folder/TenTwenty/sass/pages/home.scss */
 main .fadeInUpSD {
   -webkit-animation-name: fadeInUpSD;
   animation-name: fadeInUpSD;
@@ -147,16 +178,16 @@ main .fadeInUpSD {
 
 @keyframes progress {
   0% {
-    background-position: -145px 0px, 140px -145px, 145px 140px, 0px 145px;
+    background-position: -148px 0px, 140px -148px, 148px 140px, 0px 148px;
   }
   25% {
-    background-position: 0px 0px, 140px -145px, 145px 140px, 0px 145px;
+    background-position: 0px 0px, 140px -148px, 148px 140px, 0px 148px;
   }
   50% {
-    background-position: 0px 0px, 140px 0px, 145px 140px, 0px 145px;
+    background-position: 0px 0px, 140px 0px, 148px 140px, 0px 148px;
   }
   75% {
-    background-position: 0px 0px, 140px 0px, 0px 140px, 0px 145px;
+    background-position: 0px 0px, 140px 0px, 0px 140px, 0px 148px;
   }
   100% {
     background-position: 0px 0px, 140px 0px, 0px 140px, 0px 0px;
