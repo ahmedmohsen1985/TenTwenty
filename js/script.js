@@ -36,12 +36,14 @@ $(document).ready(function () {
         nextArrow: '<button type="button" class="slick-custom-buttom slick-next"><div data-slick-index="0" class="progressBar"></div></button>',
         useTransform: false,
         infinite: true,
-        speed: 300,
-        fade: true,
-        cssEase: 'linear',
+        speed: 500,
+        fade: false,
+        pauseOnFocus: false, 
         pauseOnHover: false,
         swipe: false
     });
+
+    
 
     //--- Hero Slider - Next Thumb
 
@@ -50,14 +52,11 @@ $(document).ready(function () {
         get_next_slick_img();
     }, 500);
 
-    $slick.on('swipe', function (e) {
+
+    $slick.on("afterChange", function (){
         get_next_slick_img();
     });
-
-    $slick.on('change', '.slick-next', function (e) {
-        get_next_slick_img();
-    });
-
+    
     $slick.on('click', '.slick-next', function (e) {
         get_next_slick_img();
     });
