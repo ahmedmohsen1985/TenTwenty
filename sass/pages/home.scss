@@ -7,11 +7,11 @@ header {
   top: 0%;
   background: $white;
   z-index: 2;
-  margin: 20px;
+  margin: $p_4 - 4;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 33px;
+  padding: $p_5 + 1;
 
   .menuBtn {
     display: none;
@@ -22,7 +22,7 @@ header {
 
     li {
       display: inline-block;
-      margin-right: 20px;
+      margin-right: $p_4 - 4;
 
       a:hover:after,
       a:focus:after {
@@ -32,7 +32,7 @@ header {
 
       a {
         font-weight: 400;
-        font-size: 14px;
+        font-size: $h6;
         line-height: 140%;
         color: $black;
         -webkit-transition: all 0.4s ease;
@@ -64,11 +64,11 @@ header {
     background: #FFFCFA;
     border: 1px solid #000000;
     font-weight: 400;
-    font-size: 16px;
+    font-size: $h5 + 1;
     line-height: 110%;
     color: #221F20;
-    padding-left: 16px;
-    height: 36px;
+    padding-left: $p_3;
+    height: $p_5 + 4;
     display: flex;
     align-items: center;
 
