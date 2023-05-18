@@ -1,5 +1,7 @@
 /* Default styles ============= */
-
+*{
+    cursor: none;
+}
 body, html {
     height: 100%;
 }  
@@ -37,11 +39,48 @@ ul{
 sup {
     text-transform: lowercase;
 }
-
-.wow {
-    visibility: hidden;
-}
 .image-hidden{
     visibility: hidden;
 }
+.cursor {
+    width: 99px;
+    height: 99px;
+    border-radius: 100%;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 999;
+  }
+  
+  .cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 999;
+  }
+  
+  .hover {
+    background: url('/images/darg.svg') no-repeat center center;
+    background-size: 100%;
+  }
 
+  .text-hover {
+    border: 1px solid $grey;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+  }
